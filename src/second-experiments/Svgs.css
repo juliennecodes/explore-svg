@@ -1,0 +1,7 @@
+.svgs svg {
+    border: 2px solid black;
+}
+
+.svgs div {
+    padding-top: 36px;
+}
