@@ -3,6 +3,7 @@ import "./Svgs.css";
 export function Svgs() {
   return (
     <div className="svgs">
+      <h1>Experimenting with Svgs</h1>
       <OriginalCopy />
       <SmallViewBoxVersion />
       <LargeViewBoxVersion />
