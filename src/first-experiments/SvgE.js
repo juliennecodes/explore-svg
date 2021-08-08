@@ -1,3 +1,5 @@
+import "./SvgE.css";
+
 export function SvgE() {
   return (
     <div className="svg-e">

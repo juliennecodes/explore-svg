@@ -1,11 +1,9 @@
 import './App.css';
-import { SvgE } from './components/SvgE';
-// import { SvgD } from './components/SvgD';
+import { SvgE } from './first-experiments/SvgE';
 
 function App() {
   return (
     <div className="App">
-      {/* <SvgD /> */}
       <SvgE />
     </div>
   );
