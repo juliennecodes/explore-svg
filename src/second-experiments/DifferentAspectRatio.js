@@ -1,11 +1,15 @@
+import "./DifferentAspectRatio.css";
+
 export function DifferentAspectRatio() {
   return (
     <div className="different-aspect-ratio">
       <h2>Different Aspect Ratio</h2>
       <OriginalCopy />
+
       <PortionAlignedTop />
       <PortionAlignedVerticalMiddle />
       <PortionAlignedBottom />
+
       <PortionAlignedLeft />
       <PortionAlignedHorizontalMiddle />
       <PortionAlignedRight />
@@ -43,23 +47,43 @@ function Shapes() {
   );
 }
 
+function CirclePortion() {
+  return (
+    <div className="portion">
+      <svg width="100px" height="100px" viewBox="100 100 100 100">
+        <Shapes />
+      </svg>
+    </div>
+  );
+}
+
+function ShapesPortion() {
+  return (
+    <div className="portion">
+      <svg width="600px" height="100px" viewBox="100 100 600 100">
+        <Shapes />
+      </svg>
+    </div>
+  );
+}
+
 function OriginalCopy() {
-    return (
-      <div>
-        <h2>original</h2>
-        <svg width="800px" height="300px" viewBox="0 0 800 300">
-          <Shapes />
-        </svg>
-        <p>width="800px" height="300px"</p>
-        <p>viewBox="0 0 800 300"</p>
-        <p>The viewBox and the viewport has a 1:1 relationship</p>
-      </div>
-    );
-  }
+  return (
+    <div className="example">
+      <h2>original</h2>
+      <svg width="800px" height="300px" viewBox="0 0 800 300">
+        <Shapes />
+      </svg>
+      <p>width="800px" height="300px"</p>
+      <p>viewBox="0 0 800 300"</p>
+      <p>The viewBox and the viewport has a 1:1 relationship</p>
+    </div>
+  );
+}
 
 function PortionAlignedTop() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the top - YMin</h2>
       <svg
         width="800px"
@@ -73,6 +97,7 @@ function PortionAlignedTop() {
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMin slice"</p>
       <p>The portion is the circle</p>
+      <CirclePortion />
       <p>
         The proportion of the portion and the viewport don't match. The
         portion's proportion is a square and the viewport's proportion is a
@@ -94,8 +119,8 @@ function PortionAlignedTop() {
         yMin of the viewport
       </p>
       <p>
-        This means that the top of the portion gets priority in
-        terms of what is shown
+        This means that the top of the portion gets priority in terms of what is
+        shown
       </p>
       <p>The bottom side is cut off</p>
     </div>
@@ -104,7 +129,7 @@ function PortionAlignedTop() {
 
 function PortionAlignedVerticalMiddle() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the middle - YMid</h2>
       <svg
         width="800px"
@@ -118,6 +143,7 @@ function PortionAlignedVerticalMiddle() {
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMid slice"</p>
       <p>The portion is the circle</p>
+      <CirclePortion />
       <p>Here, there is an overflow in the y axis</p>
       <p>
         I positioned the portion so that yMid of the portion aligns with the
@@ -134,7 +160,7 @@ function PortionAlignedVerticalMiddle() {
 
 function PortionAlignedBottom() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the bottom - YMax</h2>
       <svg
         width="800px"
@@ -148,6 +174,7 @@ function PortionAlignedBottom() {
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMax slice"</p>
       <p>The portion is the circle</p>
+      <CirclePortion />
       <p>Here, there is an overflow in the y axis</p>
       <p>
         I positioned the portion so that yMax of the portion aligns with the
@@ -164,7 +191,7 @@ function PortionAlignedBottom() {
 
 function PortionAlignedLeft() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the left side - xMin</h2>
       <svg
         width="800px"
@@ -178,6 +205,7 @@ function PortionAlignedLeft() {
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMinYMin slice"</p>
       <p>The portion is the three shapes</p>
+      <ShapesPortion />
       <p>Here, there is an overflow in the x axis</p>
       <p>
         I positioned the portion so that xMin of the portion aligns with the
@@ -193,7 +221,7 @@ function PortionAlignedLeft() {
 
 function PortionAlignedHorizontalMiddle() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the middle - xMid</h2>
       <svg
         width="800px"
@@ -207,6 +235,7 @@ function PortionAlignedHorizontalMiddle() {
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMidYMin slice"</p>
       <p>The portion is the three shapes</p>
+      <ShapesPortion />
       <p>Here, there is an overflow in the x axis</p>
       <p>
         I positioned the portion so that xMid of the portion aligns with the
@@ -223,7 +252,7 @@ function PortionAlignedHorizontalMiddle() {
 
 function PortionAlignedRight() {
   return (
-    <div>
+    <div className="example">
       <h2>Portion is aligned to the right - xMax</h2>
       <svg
         width="800px"
@@ -237,6 +266,7 @@ function PortionAlignedRight() {
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMaxYMin slice"</p>
       <p>The portion is the three shapes</p>
+      <ShapesPortion />
       <p>Here, there is an overflow in the x axis</p>
       <p>
         I positioned the portion so that xMax of the portion aligns with the

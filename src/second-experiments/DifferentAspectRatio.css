@@ -1,0 +1,11 @@
+.example > svg {
+  border: 2px solid black;
+}
+
+.different-aspect-ratio div {
+  padding-top: 36px;
+}
+
+.portion {
+  border: none!important;
+}
