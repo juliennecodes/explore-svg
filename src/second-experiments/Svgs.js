@@ -53,10 +53,6 @@ function OriginalCopy() {
       <p>width="800px" height="300px"</p>
       <p>viewBox="0 0 800 300"</p>
       <p>The viewBox and the viewport has a 1:1 relationship</p>
-      <p>
-        The portion of the canvas that the viewBox decided upon is not being
-        enlarged or halved
-      </p>
     </div>
   );
 }

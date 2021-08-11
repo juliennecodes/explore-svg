@@ -1,11 +1,12 @@
 import './App.css';
-import { Svgs } from './second-experiments/Svgs';
+import { DifferentAspectRatio } from './second-experiments/DifferentAspectRatio';
+// import { Svgs } from './second-experiments/Svgs';
 // import { SvgE } from './first-experiments/SvgE';
 
 function App() {
   return (
     <div className="App">
-      <Svgs />
+      <DifferentAspectRatio />
     </div>
   );
 }
