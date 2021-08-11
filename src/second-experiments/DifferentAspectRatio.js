@@ -85,14 +85,7 @@ function PortionAlignedTop() {
   return (
     <div className="example">
       <h2>Portion is aligned to the top - YMin</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 100 100"
-        preserveAspectRatio="xMidYMin slice"
-      >
-        <Shapes />
-      </svg>
+
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMin slice"</p>
@@ -109,7 +102,7 @@ function PortionAlignedTop() {
         that doesn't fit the viewport
       </p>
       <p>
-        Because the aspect ratio is preserved, as the portion is scaled up. Its
+        Because the aspect ratio is preserved, as the portion is scaled up, its
         width increases to fill the viewport width and the height increases
         along with it. This causes an overflow.
       </p>
@@ -123,6 +116,14 @@ function PortionAlignedTop() {
         shown
       </p>
       <p>The bottom side is cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 100 100"
+        preserveAspectRatio="xMidYMin slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
@@ -131,14 +132,7 @@ function PortionAlignedVerticalMiddle() {
   return (
     <div className="example">
       <h2>Portion is aligned to the middle - YMid</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 100 100"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <Shapes />
-      </svg>
+
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMid slice"</p>
@@ -154,6 +148,14 @@ function PortionAlignedVerticalMiddle() {
         terms of what is shown
       </p>
       <p>The top and bottom sides are cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 100 100"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
@@ -162,14 +164,7 @@ function PortionAlignedBottom() {
   return (
     <div className="example">
       <h2>Portion is aligned to the bottom - YMax</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 100 100"
-        preserveAspectRatio="xMidYMax slice"
-      >
-        <Shapes />
-      </svg>
+      
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 100 100"</p>
       <p>preserveAspectRatio = "xMidYMax slice"</p>
@@ -185,6 +180,14 @@ function PortionAlignedBottom() {
         is shown
       </p>
       <p>The top side is cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 100 100"
+        preserveAspectRatio="xMidYMax slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
@@ -193,14 +196,7 @@ function PortionAlignedLeft() {
   return (
     <div className="example">
       <h2>Portion is aligned to the left side - xMin</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 600 100"
-        preserveAspectRatio="xMinYMin slice"
-      >
-        <Shapes />
-      </svg>
+
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMinYMin slice"</p>
@@ -215,6 +211,14 @@ function PortionAlignedLeft() {
         This means that the left side gets priority in terms of what is shown
       </p>
       <p>The right side is cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 600 100"
+        preserveAspectRatio="xMinYMin slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
@@ -223,14 +227,7 @@ function PortionAlignedHorizontalMiddle() {
   return (
     <div className="example">
       <h2>Portion is aligned to the middle - xMid</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 600 100"
-        preserveAspectRatio="xMidYMin slice"
-      >
-        <Shapes />
-      </svg>
+
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMidYMin slice"</p>
@@ -246,6 +243,14 @@ function PortionAlignedHorizontalMiddle() {
         is shown
       </p>
       <p>The left and right sides are cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 600 100"
+        preserveAspectRatio="xMidYMin slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
@@ -254,14 +259,7 @@ function PortionAlignedRight() {
   return (
     <div className="example">
       <h2>Portion is aligned to the right - xMax</h2>
-      <svg
-        width="800px"
-        height="300px"
-        viewBox="100 100 600 100"
-        preserveAspectRatio="xMaxYMin slice"
-      >
-        <Shapes />
-      </svg>
+
       <p>width="800px" height="300px"</p>
       <p>viewBox="100 100 600 100"</p>
       <p>preserveAspectRatio = "xMaxYMin slice"</p>
@@ -276,6 +274,14 @@ function PortionAlignedRight() {
         This means that the right side gets priority in terms of what is shown
       </p>
       <p>The left side is cut off</p>
+      <svg
+        width="800px"
+        height="300px"
+        viewBox="100 100 600 100"
+        preserveAspectRatio="xMaxYMin slice"
+      >
+        <Shapes />
+      </svg>
     </div>
   );
 }
